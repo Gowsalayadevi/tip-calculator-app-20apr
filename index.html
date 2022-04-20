@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2 class="main-heading"> Spli<span class="heading-span">tter</span></h2>
+<main>
+
+  <div class="container">
+  <div class="main-section">
+    <div class="bill-section">
+    <p>Bill</p>
+    <input id="bill-value" type="text" >
+  </div>
+  <div class="tip-section">
+    <p>Select tip %</p>
+    <div id="tip" class="tip-value">
+     <button id="five" value=".05">5%</button>
+     <button id="ten" value=".10">10%</button>
+     <button id="fifteen" value=".15">15%</button>
+     <button id="twentyfive" value=".25">25%</button>
+     <button id="fifty" value=".50">50%</button>
+     <input id="cust" class="custom" placeholder="Custom">
+    </div>
+  </div>
+    <div class="ppl-section">
+      <p>Number of people</p>
+     <p id="error">Don't Be Zero</p>
+      <input id="numppl" type="text" >
+    </div>
+  </div>
+  <div class="final-section">
+    <div class="tip-amt">
+    <p>Tip Amount<span>/person</span></p>
+     <p id="tip-amt" class="final-value"></p>
+
+    </div>
+    <div class="total-amt">
+      <p>Total<span>/person</span></p>
+       <p id="total" class="final-value"></p>
+      </div>
+      <div>
+        <button id="reset" class="reset-btn">reset</button>
+      </div>
+
+  </div>
+</div>
+</main>
+<script src="index.js"></script>
+</body>
+</html>
